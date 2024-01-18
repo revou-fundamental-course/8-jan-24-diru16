@@ -1,27 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/style.css">
-    <title>Katik Persegi</title>
+	<title>Katik - Kalkulator Matematik</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+	<script src="js/js.js"></script>
 </head>
+
 <body>
-    <header>
-        <h1>Kalkulator Luas dan Keliling Persegi</h1>
-        <h4>Welcome To Kalkulator Luas dan Keliling Persegi</h4>
-        <p>Web ini digunakan untuk menghitung luas dan keliling persegi dalam rangka menyelesaikan mini project RevoU</p>
-    </header>
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top">
 
-    <div class="inputsection">
-        <label fir="" id="">Hitung Luas Persegi</label>
-        <input type="number" id="squareside">
-    </div>
-    <div class="buttons">
-        <button id="hitung">Hitung</button>
-        <button id="resetbutton">Reset</button>
+		</nav>
+		<div class="jumbotron text-center">
+			<h1>KATIK<small style="color: #d5d5d5 !important;"><br />Kalkulator Matematik</small></h1>
+		</div>
 
-    </div>
+
+<!-- 
+		<div class="w3-row">
+			<div class="w3-col m3 w3-green w3-center">
+				<p></p>
+			</div>
+			<div class="w3-col m6 w3-dark-grey w3-center">
+				<p>m6</p>
+			</div>
+			<div class="w3-col m3 w3-red w3-center">
+				<p></p>
+			</div>
+		</div>
+ -->
+
+
+
+		<div class="container">
+			<div class="homepage">
+				<div class="text-center">
+					<h2>Welcome to Katik</h2>
+					<p>Hai Sobat, Selamat datang di Katik
+						<br />Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun
+						datar
+					</p>
+				</div>
+
+				<div class="tab-content">
+					<div id="persegi" class="tab-pane fade in active">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="panel panel-default text-center">
+									<div class="panel-heading">
+										<h2>Luas Persegi</h2>
+									</div>
+									<div class="panel-body">
+										<p><img src="/assets/persegi.png" alt="Luas Persegi"></p>
+										<p class="text-left">Rumus Luas Persegi yaitu :</p>
+										<p><strong>L = S x S</strong></p>
+										<p class="text-left">Di mana :<br />L = Luas<br />S = Sisi</p>
+									</div>
+									<div class="panel-footer">
+
+										<div class="inputsection">
+											<label fir="" id="">Hitung Luas Persegi</label>
+											<input type="number" id="squareside">
+										</div>
+										<div class="buttons">
+											<button id="hitung" onclick="hitungLuas()">Hitung</button>
+											<button id="resetbutton" onclick="reset()">Reset</button>
+										</div>
+										<br/>
+										<div id="hasil">
+											<p></p>
+										</div>
+
+										<!-- 		<h3>Hitung Luas Persegi</h3>
+										<form id="luas-persegi" method="post" action="perhitungan/luas-persegi.php">
+											<input class="form-control" id="sisi" name="sisi" onblur="extractNumber(this,3,true);" onkeyup="extractNumber(this,3,true);" onkeypress="return blockNonNumbers(this, event, true, true);" placeholder="Nilai Sisi" type="text" required />																												
+											<div id="result-luas-persegi" class="text-left" style="display:none;"></div>											
+											<input type="submit" class="btn btn-lg" value="Hitung"></input>
+											<p class="text-right">
+												<input type="reset" class="btn btn-warning" value="Reset" onclick="showluaspersegi(0);"></input>
+											</p>
+										</form>		 -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 </body>
+
 </html>
